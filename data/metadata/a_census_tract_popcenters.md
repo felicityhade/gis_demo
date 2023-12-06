@@ -1,10 +1,15 @@
 ---
 # TITLE
-dct_title_s: Census Tract Population Centroids, Rhode Island, 2020
+dct_title_s: Providence Crime, Rhode Island, 2023
 
 # DESCRIPTION
 dct_description_sm:
-- This is a point layer of census tract population centers or centroids. Tracts are statistical areas designed by the US Census Bureau to have an ideal size of 4,000 residents, with a range of 1,200 to 8,000. Population centroids represent the center or midpoint of a population's distribution within a given area. They can be used for measuring the distance from that population to another set of features, or for assigning the area to another area based on where the centroid falls. They are better than geometric centroids for these purposes, as they account for a population's distribution. This layer was created from the Census Bureau's Centers of Population data files, based on the 2020 census. The coordinates were plotted and converted to the Rhode Island State Plane Zone, and tracts within the state were extracted from the national file. There are two unique identifiers, a short GEOID with ANSI / FIPS codes, and a long GEOID that includes summary level and geographic component codes plus ANSI FIPS codes. The features can be joined to tabular census data using these codes. The layer already includes a population field that contains the 2020 census population count. This layer was created by the Brown University Library as part of the Ocean State Spatial Database (OSSDB) project, a resource designed for basic geographic analysis and thematic mapping within the State of Rhode Island.
+- This is a point layer of approximate crime incident locations. Tracts are statistical areas designed by the US Census Bureau to have an ideal size of 4,000 residents, with a range of 1,200 to 8,000. Population centroids represent the center or midpoint of a population's distribution within a given area. They can be used for measuring the distance from that population to another set of features, or for assigning the area to another area based on where the centroid falls. They are better than geometric centroids for these purposes, as they account for a population's distribution.
+
+
+- This layer was created from the Providence Police Department's Case Log, which is updated daily to contain the most recent 180 days of data. Crime locations were geocoded using 
+- 
+- This layer was created from the Census Bureau's Centers of Population data files, based on the 2020 census. The coordinates were plotted and converted to the Rhode Island State Plane Zone, and tracts within the state were extracted from the national file. There are two unique identifiers, a short GEOID with ANSI / FIPS codes, and a long GEOID that includes summary level and geographic component codes plus ANSI FIPS codes. The features can be joined to tabular census data using these codes. The layer already includes a population field that contains the 2020 census population count. This layer was created by the Brown University Library as part of the Ocean State Spatial Database (OSSDB) project, a resource designed for basic geographic analysis and thematic mapping within the State of Rhode Island.
 
 # LANGUAGE
 dct_language_sm:
