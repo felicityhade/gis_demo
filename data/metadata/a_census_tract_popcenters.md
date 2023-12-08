@@ -1,6 +1,6 @@
 ---
 # TITLE
-dct_title_s: Providence Crime, Rhode Island, 2023
+dct_title_s: Providence Crime, Rhode Island, 2023-
 
 # DESCRIPTION
 dct_description_sm:
@@ -21,7 +21,7 @@ dct_creator_sm:
 
 # PUBLISHER
 dct_publisher_sm:
-- U.S. Census Bureau
+- Providence Police Department
 
 # PROVIDER
 schema_provider_s: Brown
@@ -36,27 +36,26 @@ gbl_resourceType_sm:
 
 # LC SUBJECT
 dct_subject_sm:
-- Census districts
-- Population geography
+- Crime
 
 # ISO THEME
 dcat_theme_sm:
-- Economy
+- Events
 - Society
 
 # TEMPORAL
 dct_temporal_sm:
-- '2020'
-- 21st century
+- '2023 - 2024'
 
 # DATE ISSUED
-dct_issued_s: '2023-07'
+dct_issued_s: '2023-12'
 
 # SPATIAL
 dct_spatial_sm:
-- Rhode Island, United States
+- Providence, Rhode Island, United States
 
 # BOUNDING BOX
+TODO: REPLACE WITH FINAL BOX
 dcat_bbox: 'ENVELOPE(-71.9073,-71.0886,42.0189,41.0958)'
 
 # RIGHTS
@@ -72,17 +71,20 @@ dct_license_sm:
 dct_accessRights_s: Public
 
 # FILE FORMAT
-dct_format_s: SQLite
+dct_format_s: 
+- Shapefile
+- Tabular data
 
 # UNIQUE ID
+TODO: ASK WHAT TO PUT HERE
 id: brown-04042023AAI
 
 # IDENTIFIER
 dct_identifier_sm:
-- https://github.com/Brown-University-Library/geodata_ossdb
+- https://github.com/Brown-University-Library/geodata_pvdcrime/data
 
 # METADATA MODIFIED
-gbl_mdModified_dt: '2023-07-11'
+gbl_mdModified_dt: '2023-12-8'
 
 # METADATA VERSION
 gbl_mdVersion_s: Aardvark
