@@ -32,12 +32,14 @@ TODO: REPLACE THIS SECTION
 
 | column    | description                                                                                                  |
 | --------- | ------------------------------------------------------------------------------------------------------------ |
-| casenumber | a combination of yr_month, iso_a3, and cat_code that uniquely identifies each row (i.e. 2004_09_PAK_FOOD)    |
-| location  | YYYY_MM (i.e. 2004_09 for September 2004)                                                                    |
-| reported_date  | the ISO 3166 Alpha 3 code that uniquely identifies the country of the duty station (i.e. PAK for Pakistan)   |
-| month | the "common name" of the country, corresponding with its ISO 3166 Alpha 3 code                               |
-| year  | the "UN name" of the country (how the country was named by the UN in the original spreadsheet for that time) |
-| offense_desc     | the city where the UN duty station for the country is located                                                |
+| casenumber | Case number assigned by Providence Police records management system  |
+| location  | Street Number and Street Name or nearest intersection of reported incident.
+A street number does not always indicate the incident took place on the property. |
+| reported_date  | Date and Time reported to Providence Police.
+When a crime is reported does not always indicate when it took place  |
+| month | ...                              |
+| year  | ... |
+| offense_desc     | ...                                                |
 | statute_code  | a four-letter code corresponding to a particular retail price category (see below for full list)             |
 | statute_desc     | the full name of the retail price category                                                                   |
 | counts    | US Dollar nominal monthly expenditure by an average UN staff member                                          |
@@ -47,7 +49,8 @@ TODO: REPLACE THIS SECTION
 | longitude* | Approximate longitude in WGS 84 |
 | source* | Source of the generated coordinates |
 | violent_cat | Category of violent crime |
-| property_cat | Cateogry of property crime | 
+| property_cat | Category of property crime | 
+| ------- | ------ |
 
 *Only present for successfully geocoded results
 
