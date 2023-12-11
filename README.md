@@ -42,3 +42,12 @@ TODO: REPLACE THIS SECTION
 | statute_desc     | the full name of the retail price category                                                                   |
 | counts    | US Dollar nominal monthly expenditure by an average UN staff member                                          |
 | reporting_officer     | numerical Post Adjustment Index value                                                                        |
+| unique_id | |
+| latitude* | Approximate latitude in WGS 84 |
+| longitude* | Approximate longitude in WGS 84 |
+| source* | Source of the generated coordinates |
+| violent_cat | Category of violent crime |
+| property_cat | Cateogry of property crime | 
+*Only present for successfully geocoded results
+
+
