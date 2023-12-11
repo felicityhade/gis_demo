@@ -2,29 +2,19 @@
 
 ## Introduction
 
-The Ocean State Spatial Database (OSSDB) is a geodatabase created by the Brown University Library [GeoData@SciLi](https://libguides.brown.edu/geodata/) team, for conducting basic geographic analysis and thematic mapping within the State of Rhode Island. It is intended to serve as a basic foundation for contemporary mapping projects, and as an educational tool for supporting GIS coursework and introducing spatial databases and SQL. It contains geographic features and data compiled from several public sources. A subset of the Census Bureau's TIGER/LINE water features were used to create a base map of coastal water, which was used to clip and create land-based areas for census geographies including counties, county subdivisions, census tracts, and ZCTAs. Census data from the 2020 Census and American Community Survey (ACS) are stored in tables that can be easily related to geographic features. Point data for public facilities like schools and libraries were gathered from several state and federal agencies and transformed into spatial data that can be used for reference mapping, or analysis for measuring distance, drawing buffers, or counting features within areas. Objects in the database are labelled with a prefix that groups them into categories:
-
-- 'a' objects are land-area features to be used for thematic mapping
-
-- 'b' objects are boundaries for reference mapping
-
-- 'c' objects are census data tables that can be joined to 'a' features
-
-- 'd' objects consist of other point, line, and polygon features. 
-
-The data is appropriate for thematic mapping at a state, county, and town-level, and reference mapping at a state and county level. While it can be used for creating reference maps at the town level, it is not ideal for this purpose given the degree of generalization in the TIGER/LINE files. All of the features were transformed to share a common coordinate reference system, Rhode Island State Plane (ft-US), EPSG 3438.
-
-This repository includes the spatial database in a SQLite / Spatialite format and an ESRI file geodatabase format, metadata in the OSM Aardvark standard, documentation, and Python scripts for generating certain data layers and tables that will be updated annually.
+The Providence Crime Dataset is a geodataset created by the Brown University Library [GeoData@SciLi](https://libguides.brown.edu/geodata/) team for the analysis of crimes by location and type through time. It is derived from the [Providence Police Case Log](https://data.providenceri.gov/Public-Safety/Providence-Police-Case-Log-Past-180-days/rz3y-pz8v/about_data), updated nightly with the past 180 days of crime incidents in Providence. Longitude and latitude coordinates were derived from three sources: RIGIS's E911 landmark point layer, the RIDOT geocoder, and ______ (wherever the landmark locations come from). The coordinate source is determined by the format of the location attribute in the original dataset: block number, intersection, or landmark. Locations which do not fall into these categories, including standalone street names, were not geocoded due to their imprecise nature. Successfully geocoded results are stored as a point layer ([shapefile name]) in the Rhode Island State Plane (ft-US) coordinate system, EPSG 3438. Results are also available in Excel format ([excel file name]), with 'latitude' and 'longitude' columns in WGS 84. Cases which could not be accurately geocoded are stored in ([excel file name]). Cases are stored in separate files by year. In addition to these output files, this repository includes metadata in the OSM Aardvark standard, documentation, and Python scripts for generating the results.
 
 ## Rights and Use
 
-The database and associated documentation are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) CC BY-NC-SA ![CC BY-NC-SA](/images/cc_license.png). You are free to share and to adapt the work as long as you cite the source, do not use it for commercial purposes, and release adaptations under the same license.
+The dataset and associated documentation are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) CC BY-NC-SA ![CC BY-NC-SA](/images/cc_license.png). You are free to share and to adapt the work as long as you cite the source, do not use it for commercial purposes, and release adaptations under the same license.
 
 *Disclaimer: Every effort was made to insure that the data, which was compiled from public sources, was processed and presented accurately. The creators and Brown University disclaim any liability for errors, inaccuracies, or omissions that may be contained therein or for any damages that may arise from the foregoing. Users should independently verify the accuracy and fitness of the data for their purposes.*
 
 ## Downloads
 
-<u>CURRENT VERSION</u>: ossdb_2023_07
+<u>CURRENT VERSION</u>: geodata_pvdcrime_2023_12
+
+TODO: REPLACE THIS SECTION
 
 - [OSSDB SQLite](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/current_db/ossdb_sqlite.zip): the primary database, a SQLite / Spatialite database that can be used in desktop GIS packages such as QGIS and ArcGIS Pro, and SQL database tools like the QGIS DB Manager, Spatialite GUI, and DB Browser for SQLite
 
@@ -38,6 +28,10 @@ The database and associated documentation are licensed under a [Creative Commons
 
 ## Features
 
+TODO: what should go here?
+
+Example:
+
 - State, counties, county subdivisions (cities and towns), ZIP Code Tabulation Areas (ZCTAs), census tracts, census tract population centroids. "a" features for thematic mapping.
 
 - Legal / statistical boundaries for the same areas. "b" features for reference mapping.
@@ -49,6 +43,8 @@ The database and associated documentation are licensed under a [Creative Commons
 - Roads, passenger railroads, train stations, major lakes and rivers, coastal water, the Narragansett Reservation. "d" features.
 
 ## Connect with QGIS
+
+TODO: include?
 
 1. Download the OSSDB for SQLite file, move it to a folder, and unzip the zip file.
 
@@ -66,6 +62,8 @@ The database and associated documentation are licensed under a [Creative Commons
 
 ## Connect with QGIS DB Manager
 
+TODO: include?
+
 1. Follow steps 1 and 2 in the previous section.
 
 2. On the menu bar, choose *Database - DB Manager*.
@@ -81,6 +79,8 @@ The database and associated documentation are licensed under a [Creative Commons
 ![QGIS DB Manager](/images/qgis_dbm_example.png)
 
 ## Connect with ArcGIS Pro
+
+TODO: include?
 
 1. Download the OSSDB File Geoadatabase, move it to a folder, and unzip the zip file. You may want to store the database in your user\documents\ArcGIS folder, as that's the default location for project files.
 
