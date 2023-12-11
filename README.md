@@ -48,6 +48,7 @@ TODO: REPLACE THIS SECTION
 | source* | Source of the generated coordinates |
 | violent_cat | Category of violent crime |
 | property_cat | Cateogry of property crime | 
+
 *Only present for successfully geocoded results
 
 
