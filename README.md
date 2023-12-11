@@ -30,17 +30,15 @@ TODO: REPLACE THIS SECTION
 
 ## Features
 
-TODO: what should go here?
-
-Example:
-
-- State, counties, county subdivisions (cities and towns), ZIP Code Tabulation Areas (ZCTAs), census tracts, census tract population centroids. "a" features for thematic mapping.
-
-- Legal / statistical boundaries for the same areas. "b" features for reference mapping.
-
-- 5-year American Community Survey (ACS) socio-economic, population, and housing tables (updated annually), and 2020 census tables for county subdivisions, ZCTAs, and tracts. Variables can be identified using the lookup table for each dataset. Each ACS variable comes with four columns: an estimate, a margin of error, a percent total, and a margin of error for the percent total. "c" tables can be joined to "a" features using GEOIDLONG columns.
-
-- Point features for colleges and universities, preK-12 schools, public libraries, and hospitals. "d" features updated annually.
-
-- Roads, passenger railroads, train stations, major lakes and rivers, coastal water, the Narragansett Reservation. "d" features.
-
+| column    | description                                                                                                  |
+| --------- | ------------------------------------------------------------------------------------------------------------ |
+| casenumber | a combination of yr_month, iso_a3, and cat_code that uniquely identifies each row (i.e. 2004_09_PAK_FOOD)    |
+| location  | YYYY_MM (i.e. 2004_09 for September 2004)                                                                    |
+| reported_date  | the ISO 3166 Alpha 3 code that uniquely identifies the country of the duty station (i.e. PAK for Pakistan)   |
+| month | the "common name" of the country, corresponding with its ISO 3166 Alpha 3 code                               |
+| year  | the "UN name" of the country (how the country was named by the UN in the original spreadsheet for that time) |
+| offense_desc     | the city where the UN duty station for the country is located                                                |
+| statute_code  | a four-letter code corresponding to a particular retail price category (see below for full list)             |
+| statute_desc     | the full name of the retail price category                                                                   |
+| counts    | US Dollar nominal monthly expenditure by an average UN staff member                                          |
+| reporting_officer     | numerical Post Adjustment Index value                                                                        |
